@@ -4,11 +4,13 @@
   
   #answer-options button {
     border-radius: 1.25rem;
+
   }
   
   #quiz-question {
     font-size: 2rem;
     font-weight: bold;
+    
   }
   
   #view-highscores:hover {
@@ -17,10 +19,12 @@
   }
   
   .jumbo {
-    background-color: #e9ecef;
+    background-color: #29afd1;
   }
   
   .jumbotron {
     padding-top: 1rem;
+
+    background-color: rgb(197, 150, 104);
   }
   

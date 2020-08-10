@@ -80,11 +80,11 @@ function askQuestion() {
 function checkAnswer(e) {
   // check for right answer accounting for the '#. ' text added to each button
   if (e.substring(3, e.length) === questions[questionIndex].answer) {
-    audioDing.play();
+    
     $('#right-or-wrong').html('<i class="far fa-check-circle"></i> Correct!').css('color', 'green');
     $('#right-or-wrong').removeClass('d-none');
   } else { // wrong answer
-    audioBuzz.play();
+    
     $('#right-or-wrong').html('<i class="far fa-times-circle"></i> Wrong!').css('color', 'red');
     $('#right-or-wrong').removeClass('d-none');
     
