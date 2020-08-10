@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+
+    <title>Allison's Code Quiz</title>
+
+</head>
+
+<body>
+
+    <!-- The top row with "View Highscores" and the timer countdown -->
+    <div class="container-fluid">
+        <header class="row justify-content-between jumbo p-2">
+            <div class="col-3">
+                <span id="view-highscores">View Highscores</span>
+            </div>
+            <div class="col-3 text-right">
+                <p id="time-remaining"></p>
+            </div>
+        </header>
+    </div>
+
+    <!-- The welcome prompt with quiz descript and "Begin Quiz" button -->
+    <div id="main-prompt" class="jumbotron text-center">
+        <div class="container">
+            <h1 id="start-end" class="display-4">Allison's Code Quiz</h1>
+            <p class="lead">
+                Put your knowledge of JavaScript to the test! Answer the questions correctly and as quickly as possible to
+                get your name into the high scores list.
+            </p>
+            <hr class="my-4" />
+            <p id="description"></p>
+            <button type="button" id="begin-quiz" class="btn btn-primary btn-lg">Start Quiz!</button>
+        </div>
+    </div>
+
+    <!-- Start of the main div -->
+    <div id="main-content" class="d-none">
+
+        <!-- The container for the quiz question and answers -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-10 col-md-8 col-lg-6">
+                    <p id="quiz-question"></p>
+
+                    <div id="answer-options"></div>
+
+                    <form id="score-form" class="form-inline mb-3 d-none">
+                        <label for="initials">Enter Initials:</label>
+                        <input type="text" id="initials" class="form-control ml-2" />
+                        <button type="submit" id="submit-initials" class="btn btn-primary m-2">Submit</button>
+                    </form>
+
+                    <form id="highscore-list-buttons" class="form-inline mb-3 d-none">
+                        <button type="button" id="go-back-button" class="btn btn-primary mr-2">Go Back</button>
+                        <button type="button" id="clear-highscores-button" class="btn btn-primary">Clear
+                            Highscores</button>
+                    </form>
+
+                    <div id="right-or-wrong" class="p-1 w-100 d-none"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="assets/script.js"></script>
+    <script src="assets/questions.js"></script>
+
+</body>
+
+</html>

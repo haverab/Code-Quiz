@@ -1,0 +1,26 @@
+#right-or-wrong {
+    border-top: 3px solid #ddd;
+  }
+  
+  #answer-options button {
+    border-radius: 1.25rem;
+  }
+  
+  #quiz-question {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  #view-highscores:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .jumbo {
+    background-color: #e9ecef;
+  }
+  
+  .jumbotron {
+    padding-top: 1rem;
+  }
+  
