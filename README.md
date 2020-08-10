@@ -1,11 +1,11 @@
 # Code-Quiz
 This is homework assignment number 4
 
-#Description
+# Description
 
 
 
-#Link to deployed website
+# Link to deployed website
 
 
-#Screenshot of Code Quiz
+# Screenshot of Code Quiz
